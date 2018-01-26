@@ -1,5 +1,6 @@
-import discord
 import asyncio
+import discord
+import json
 import random
 
 client = discord.Client()
@@ -35,4 +36,4 @@ async def on_message(message):
         outmsg += " is a "+random.choice(t1)+" "+random.choice(t2)+" "+random.choice(t3)+"."
         await client.send_message(message.channel, outmsg)
 
-client.run(tokendata["token"]
+client.run(tokendata["token"])
