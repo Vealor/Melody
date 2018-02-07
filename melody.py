@@ -31,10 +31,10 @@ async def on_message(message):
         theuser = message.server.get_member_named(str(message.mentions[0]))
         outmsg += theuser.mention
         t1 = ['lazy','stupid','insecure','idiotic','slimy','slutty','smelly','pompous','communist','dicknose','pig-eating','racist','elitist','white trash','drug-loving','butterface','tone deaf','ugly','creepy']
-        t2 = ['douche','ass','turd','recturm','butt','cock','shit','crotch','bitch','turd','prick','slut','taint','fuck','dick','goner','shart','nut','sphincter']
+        t2 = ['douche','ass','turd','rectum','butt','cock','shit','crotch','bitch','turd','prick','slut','taint','fuck','dick','goner','shart','nut','sphincter']
         t3 = ['pilot','canoe','captain','pirate','hammer','knob','box','jockey','nazi','waffle','goblin','blossum','biscuit','clown','socket','monster','hound','dragon','balloon']
         w1 = random.choice(t1)
-        if w1[0] == 'a' OR w1[0] == 'e' OR w1[0] == 'i' OR w1[0] == 'u':
+        if w1[0] == 'a' or w1[0] == 'e' or w1[0] == 'i' or w1[0] == 'u':
             outmsg += " is an "+w1+" "+random.choice(t2)+" "+random.choice(t3)+"."
         else:
             outmsg += " is a "+w1+" "+random.choice(t2)+" "+random.choice(t3)+"."
